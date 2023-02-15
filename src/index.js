@@ -1,4 +1,4 @@
-export default caseExp = (expression) => new Proxy(expression, {
+export default switchExp = (expression) => new Proxy(expression, {
 	get(target, name) {
 		if(target.hasOwnProperty(name)) {
 			return target[name];

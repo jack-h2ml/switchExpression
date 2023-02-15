@@ -1,0 +1,1 @@
+!function(){"use strict";switchExp=function(t){return new Proxy(t,{get:function(t,n){return t.hasOwnProperty(n)?t[n]:t.hasOwnProperty("default")?t.default:void 0}})}}();
