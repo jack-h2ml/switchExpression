@@ -3,11 +3,12 @@ logs
 *.log
 npm-debug.log*
 
-# compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-
-# src directory
+# dev tools
 src
+demo
+webpack.config.js
+.babelrc
+.browserslistrc
 
 # npm
 .npm
@@ -25,10 +26,6 @@ src
 # editor config
 .editorconfig
 
-# babel Config
-.babelrc
-.browserslistrc
-
 # git
 .git
 .gitignore
@@ -36,3 +33,4 @@ src
 
 # other
 .tgz
+.zip

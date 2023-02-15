@@ -1,10 +1,12 @@
 {
 	"name": "@h2mlagency/switchexpression",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A simple function which brings the power of the switch statement to expressions.",
-	"main": "./dist/main.js",
+	"main": "main.js",
 	"scripts": {
-		"build": "webpack --mode production"
+		"build": "babel ./src/main.js --out-file ./main.js && uglifyjs ./main.js --output ./main.js",
+		"start": "babel ./src/main.js --watch --out-file ./main.js & webpack serve --config ./webpack.config.js --mode development",
+		"startNoBabel": "webpack serve --config ./webpack.config.js --mode development"
 	},
 	"author": "Jack Notman",
 	"license": "MIT",
@@ -25,9 +27,11 @@
 	},
 	"homepage": "https://github.com/jack-h2ml/switchExpression#readme",
 	"devDependencies": {
+		"@babel/cli": "^7.20.7",
 		"@babel/core": "^7.20.12",
 		"@babel/preset-env": "^7.20.2",
 		"babel-loader": "^9.1.2",
+		"uglify-js": "^3.17.4",
 		"webpack": "^5.75.0",
 		"webpack-cli": "^5.0.1",
 		"webpack-dev-server": "^4.11.1"
