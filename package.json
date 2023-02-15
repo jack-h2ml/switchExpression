@@ -1,0 +1,11 @@
+{
+  "name": "@h2ml/switchexpression",
+  "version": "1.0.0",
+  "description": "A simple function which brings the power of the switch statement to expressions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jack Notman",
+  "license": "MIT"
+}
