@@ -4,7 +4,8 @@
 	"description": "A simple function which brings the power of the switch statement to expressions.",
 	"main": "main.js",
 	"scripts": {
-		"build": "babel ./src/main.js --out-file ./main.js && uglifyjs ./main.js --output ./main.js",
+		"build": "babel ./src/main.js --out-file ./main.js",
+		"uglify": "uglifyjs ./src/main.js --output ./main.js",
 		"start": "babel ./src/main.js --watch --out-file ./main.js & webpack serve --config ./webpack.config.js --mode development",
 		"startNoBabel": "webpack serve --config ./webpack.config.js --mode development"
 	},
