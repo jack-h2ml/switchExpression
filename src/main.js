@@ -27,7 +27,7 @@ const SwitchExp = class {
 			(
 				(condition instanceof Function && condition(expression) === true) || 
 				(expression === condition) || 
-				((condition && !value) && (value = condition))
+				((condition && (value === undefined)) && (value = undefined))
 			) && (
 				value instanceof Function
 					? ((this.#exitReturn = value(SwitchExp.exitCallback)) instanceof SwitchExp.#Exit)
@@ -44,4 +44,4 @@ const SwitchExp = class {
 	}
 }
 
-export const switchExp = (conditions) => new SwitchExp(conditions);
+const switchExp = (conditions) => new SwitchExp(conditions);
