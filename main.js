@@ -1,6 +1,10 @@
 "use strict";
 
 require("core-js/modules/es.error.cause.js");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.switchExp = void 0;
 var _class, _exitReturn, _break, _conditions, _Exit;
 function _classPrivateFieldInitSpec(obj, privateMap, value) { _checkPrivateRedeclaration(obj, privateMap); privateMap.set(obj, value); }
 function _checkPrivateRedeclaration(obj, privateCollection) { if (privateCollection.has(obj)) { throw new TypeError("Cannot initialize the same private elements twice on an object"); } }
@@ -66,3 +70,4 @@ const SwitchExp = (_exitReturn = /*#__PURE__*/new WeakMap(), _break = /*#__PURE_
   return new (_classStaticPrivateFieldSpecGet(SwitchExp, _class, _Exit))(val);
 }), _class));
 const switchExp = conditions => new SwitchExp(conditions);
+exports.switchExp = switchExp;

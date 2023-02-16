@@ -1,6 +1,6 @@
 {
 	"name": "@h2mlagency/switchexpression",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A simple function, bringing the power of switch statements to expressions.",
 	"main": "main.js",
 	"scripts": {

@@ -44,4 +44,4 @@ const SwitchExp = class {
 	}
 }
 
-const switchExp = (conditions) => new SwitchExp(conditions);
+export const switchExp = (conditions) => new SwitchExp(conditions);
